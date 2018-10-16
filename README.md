@@ -1,2 +1,3 @@
 # hello-world
-Stuff for Mr. Amalong
+
+This is where I upload assignments for CIS 141
