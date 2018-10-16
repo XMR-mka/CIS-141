@@ -176,9 +176,17 @@ Mikrotik is a manufacturer of routing and wireless equipment for ISPs and enterp
 ### Skill 2.1 Technical Blog Response
 
 *Create a "Top 5" list of Windows 10 networking best practices, tips, tricks and troubleshooting strategies*
-		1. ipconfig /all - This command within command prompt displays the full information for all network adapters, and is a fantastic troubleshooting tool when looking for a host's network configuration 
-		[Microsoft Doc](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig)
-		2. tracert [insert host IP address] - This command within command prompt uses ICMP to trace the destination to the host, and is hugely helpful in identifying network communication and routing issues.
-		3. ping [insert host IP address] - This command within command prompt uses ICMP to test connectivity to a single device, as well as verifying TCP/IP functionality in the host machine when used in combination with a loopback address
-		4.
-		5.
+
+1. ipconfig /all - This command within command prompt displays the full information for all network adapters, and is a fantastic troubleshooting tool when looking for a host's network configuration. [Microsoft Doc](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig)
+2. tracert [insert host IP address] - This command within command prompt uses ICMP to trace the destination to the host, and is hugely helpful in identifying network communication and routing issues.  [Microsoft Doc](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tracert)
+3. ping [insert host IP address] - This command within command prompt uses ICMP to test connectivity to a single device, as well as verifying TCP/IP functionality in the host machine when used in combination with a loopback address.  [Microsoft Doc](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping)
+4. When troubleshooting network issues, disabling and re-enabling the network adapter can often solve the issue, especially with older hardware.
+5. nslookup - This utility within command prompt can be used to test and troubleshoot DNS, including viewing DNS information or changing name servers.  [Microsoft Doc](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup)
+
+### Skill 2.2 Technical Blog Response
+
+1. *You have a new desktop running Windows 10.  However, you try to copy your file repository and find out that you do not have enough disk space.  You have 400 GB of free disk space on your C drive and you have 3 smaller 500 GB drives.  What can you do?*
+	- I could combine all of the drives into one large spanned volume using Disk Management.  This would provide enough storage to copy my file repository over
+	
+2. *You create a new storage pool for the following disks on your Windows 10 computer: 1 TB SATA, 1 TB SAS.  SATA and SAS are two different types of drives with different connectors and interfaces.  What is the maximum size you can allocate for your new storage space?* 
+	- The maximum size I can allocate for the new storage space is 2 TB, which would be with both of the 1 TB drives.  Storage Spaces allows you to pool the storage of different drives, regardless of connectors or interfaces.
